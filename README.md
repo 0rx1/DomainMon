@@ -1,147 +1,144 @@
 <div align="center">
-  
-  <img src="assets/logo.svg" alt="Domain Sentinel" width="180" height="180"/>
+  <img src="assets/logo.svg" alt="DomainMon" width="180" height="180"/>
 
-  # 🌐 Domain Sentinel
-  
-  <h3>
-    <strong>Next-Gen Domain Intelligence Platform</strong>
-  </h3>
+  # DomainMon
+  > Simple Domain Analysis Dashboard
 
-  [![Go Version](https://img.shields.io/badge/Go-1.22+-00ADD8?style=for-the-badge&logo=go&logoColor=white)](https://golang.org/doc/go1.22)
-  [![Made with Love](https://img.shields.io/badge/Made%20With-💙-blue?style=for-the-badge)](https://github.com/yourusername/domain-sentinel)
-  [![Stars](https://img.shields.io/github/stars/yourusername/domain-sentinel?style=for-the-badge&logo=github&color=2563eb&logoColor=white)](https://github.com/yourusername/domain-sentinel/stargazers)
-
-  <br/>
-
-  <a href="#-features">Features</a> •
-  <a href="#-quickstart">Quickstart</a> •
-  <a href="#-docs">Docs</a> •
-  <a href="#-community">Community</a>
-
+  [![Go](https://img.shields.io/badge/Go-1.22+-00ADD8?style=for-the-badge&logo=go&logoColor=white)](https://go.dev)
+  [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org)
+  [![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chart.js&logoColor=white)](https://www.chartjs.org)
+  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=for-the-badge)](LICENSE)
 </div>
-
-<br/>
 
 <div align="center">
-  <img src="assets/dashboard.gif" alt="Domain Sentinel Dashboard" width="100%"/>
-  <br/>
-  <br/>
+  <img src="assets/dashboard.png" alt="DomainMon Dashboard" width="100%"/>
 </div>
 
-## ⚡️ Features
+<div align="center">
+  <h2>✨ Features</h2>
+  <kbd>
+    <br>
+    <span>
+      📊 <b>TLD Analytics</b> &nbsp;•&nbsp;
+      🔍 <b>Pattern Detection</b> &nbsp;•&nbsp;
+      🎯 <b>Domain Search</b> &nbsp;•&nbsp;
+      ⚡ <b>Fast Lookups</b>
+    </span>
+    <br>
+    <br>
+  </kbd>
+</div>
+
+## 🚀 API Endpoints
+
+```go
+// Domain Operations
+GET /api/v1/domains         // List all domains with pagination
+GET /api/v1/domains/new     // Get newly registered domains
+GET /api/v1/domains/stats   // Get domain statistics
+
+// TLD Analysis
+GET /api/v1/tlds           // Get TLD distribution
+GET /api/v1/tlds/{tld}     // Get specific TLD details
+
+// Domain Lookups
+GET /api/v1/lookup/whois   // WHOIS information lookup
+GET /api/v1/lookup/dns     // DNS records lookup
+```
+
+## 🔄 Data Source
+
+Powered by [Webamon's ICANN CZDS Daily Snapshots](https://codeberg.org/webamon/newly_registered_domains):
+- Daily updates of newly registered domains
+- Fortune 500 domain similarity monitoring
+- Comprehensive TLD coverage
+
+## 💫 Core Features
 
 <div align="center">
   <table>
     <tr>
       <td align="center">
-        <img width="40" src="assets/icons/radar.svg" alt="radar"/>
-        <br/>
-        Real-time Monitoring
+        <h3>📈</h3>
+        <b>Analytics</b>
+        <p>TLD Distribution</p>
       </td>
       <td align="center">
-        <img width="40" src="assets/icons/similarity.svg" alt="similarity"/>
-        <br/>
-        Pattern Detection
+        <h3>🔄</h3>
+        <b>Lookups</b>
+        <p>WHOIS & DNS</p>
       </td>
       <td align="center">
-        <img width="40" src="assets/icons/chart.svg" alt="chart"/>
-        <br/>
-        Visual Analytics
+        <h3>🎯</h3>
+        <b>Patterns</b>
+        <p>F500 Analysis</p>
       </td>
       <td align="center">
-        <img width="40" src="assets/icons/shield.svg" alt="shield"/>
-        <br/>
-        Threat Detection
+        <h3>⚡</h3>
+        <b>Performance</b>
+        <p>Smart Caching</p>
       </td>
     </tr>
   </table>
 </div>
 
-## 🚀 Quickstart
+## 🚀 Quick Start
 
 ```bash
-# 🔥 One-line installation
-curl -sSL https://get.domain-sentinel.dev | bash
-
-# 🎮 Or manual setup
-git clone https://github.com/yourusername/domain-sentinel.git
-cd domain-sentinel && make install
+git clone https://github.com/0rx1/DomainMon.git && cd domain-sentinel
+go run .
 ```
 
-## 🎯 Key Features
-
-- 🔄 **Real-time Domain Intelligence**
-  ```
-  • Live domain registration tracking
-  • Instant removal detection
-  • Automated health monitoring
-  ```
-
-- 🧬 **Advanced Pattern Analysis**
-  ```
-  • ML-powered similarity detection
-  • Configurable matching thresholds
-  • Visual pattern mapping
-  ```
-
-- 📊 **Interactive Analytics**
-  ```
-  • Dynamic data visualization
-  • Real-time statistical analysis
-  • Custom reporting dashboards
-  ```
-
-## 🛠 Tech Stack
+## 🛠 Stack
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=go,js,html,css,docker" alt="tech stack"/>
+  <table>
+    <tr>
+      <td align="center">
+        <img width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg"/>
+      </td>
+      <td align="center">
+        <img width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+      </td>
+      <td align="center">
+        <img width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
+      </td>
+      <td align="center">
+        <img width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
+      </td>
+    </tr>
+  </table>
 </div>
 
-## 📈 Performance
+<div align="center">
+  <br>
+  <p>
+    <a href="https://www.linkedin.com/company/web-a-mon">
+      <img src="https://img.shields.io/badge/Data_by_Webamon-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+    </a>
+    <a href="https://www.linkedin.com/in/charafeddine-nassiri">
+      <img src="https://img.shields.io/badge/Built_by_You-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+    </a>
+  </p>
+  <p>Made with 💙</p>
+</div>
 
-```mermaid
-graph LR
-    A[Input] --> B[Processing]
-    B --> C[Analysis]
-    C --> D[Output]
-    style A fill:#2563eb,stroke:#fff,stroke-width:2px,color:#fff
-    style B fill:#3b82f6,stroke:#fff,stroke-width:2px,color:#fff
-    style C fill:#60a5fa,stroke:#fff,stroke-width:2px,color:#fff
-    style D fill:#93c5fd,stroke:#fff,stroke-width:2px,color:#fff
+## 📜 License
+
+```
+Copyright 2024 Domain Sentinel Contributors
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
 ```
 
-## 🌍 Community & Support
-
-<div align="center">
-  <a href="https://discord.gg/domain-sentinel">
-    <img src="https://img.shields.io/discord/1234567890?color=7289da&logo=discord&logoColor=white&style=for-the-badge" alt="Discord"/>
-  </a>
-  <a href="https://twitter.com/domainsentinel">
-    <img src="https://img.shields.io/twitter/follow/domainsentinel?color=1DA1F2&logo=twitter&style=for-the-badge" alt="Twitter"/>
-  </a>
-</div>
-
-## 🤝 Contributors
-
-<div align="center">
-  <a href="https://github.com/0rx1/DomainMon/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=yourusername/domain-sentinel" />
-  </a>
-</div>
-
-<div align="center">
-
-## 💫 Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=0rx1/DomainMon&type=Date)](https://star-history.com/#0rx1/DomainMon&Date)
-
-</div>
-
----
-
-<div align="center">
-  <strong>Domain Sentinel</strong> • Built with 💙 by <a href="https://github.com/0rx1">@0rx1</a>
-  <br/>
-  🌟 Star us on GitHub • 🐛 Report an Issue
-</div> 
+This project is licensed under the Apache License, Version 2.0. See the [LICENSE](LICENSE) file for the full license text. 
