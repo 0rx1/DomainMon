@@ -8,6 +8,7 @@
   [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org)
   [![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chart.js&logoColor=white)](https://www.chartjs.org)
   [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=for-the-badge)](LICENSE)
+  
 </div>
 
 <div align="center">
@@ -28,6 +29,7 @@
     <br>
   </kbd>
 </div>
+
 
 ## 🚀 API Endpoints
 
@@ -88,6 +90,7 @@ Powered by [Webamon's ICANN CZDS Daily Snapshots](https://codeberg.org/webamon/n
 git clone https://github.com/0rx1/DomainMon.git && cd domain-sentinel
 go mod tidy
 go run .
+Visit http://localhost:8080
 ```
 
 <div align="center">
@@ -103,7 +106,7 @@ go run .
   <p>Made with 💙</p>
 </div>
 
-![GitHub Repo stars](https://img.shields.io/github/stars/0r3x/DomainMon)
+
 
 ## 📜 License
 
