@@ -87,7 +87,7 @@ Powered by [Webamon's ICANN CZDS Daily Snapshots](https://codeberg.org/webamon/n
 ## 🚀 Quick Start
 
 ```bash
-git clone https://github.com/0rx1/DomainMon.git && cd domain-sentinel
+git clone https://github.com/0rx1/DomainMon.git && cd DomainMon
 go mod tidy
 go run .
 Visit http://localhost:8080
