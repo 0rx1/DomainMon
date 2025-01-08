@@ -86,42 +86,24 @@ Powered by [Webamon's ICANN CZDS Daily Snapshots](https://codeberg.org/webamon/n
 
 ```bash
 git clone https://github.com/0rx1/DomainMon.git && cd domain-sentinel
+go mod tidy
 go run .
 ```
-
-## 🛠 Stack
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <img width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg"/>
-      </td>
-      <td align="center">
-        <img width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
-      </td>
-      <td align="center">
-        <img width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
-      </td>
-      <td align="center">
-        <img width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
-      </td>
-    </tr>
-  </table>
-</div>
 
 <div align="center">
   <br>
   <p>
     <a href="https://www.linkedin.com/company/web-a-mon">
-      <img src="https://img.shields.io/badge/Data_by_Webamon-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Follow_Webamon-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Follow Webamon on LinkedIn"/>
     </a>
     <a href="https://www.linkedin.com/in/charafeddine-nassiri">
-      <img src="https://img.shields.io/badge/Built_by_You-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Follow_Me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Follow Charafeddine Nassiri on LinkedIn"/>
     </a>
   </p>
   <p>Made with 💙</p>
 </div>
+
+![GitHub Repo stars](https://img.shields.io/github/stars/0r3x/DomainMon)
 
 ## 📜 License
 
